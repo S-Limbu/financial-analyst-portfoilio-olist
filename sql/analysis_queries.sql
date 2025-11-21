@@ -1,37 +1,62 @@
--- sql/analysis_queries.sql
--- Useful queries for analysis / Tableau / validation
-
--- 1) Monthly GMV
-SELECT year_month, revenue FROM mart_monthly_revenue ORDER BY year_month;
-
--- 2) AOV per month
+-- Monthly Revenue
 SELECT
-    year_month,
-    revenue / NULLIF(orders,0) AS aov
-FROM mart_monthly_revenue
+    strftime('%Y-%m', order_purchase_timestamp) AS year_month,
+    SUM(payment_value) AS revenue
+FROM orders
+LEFT JOIN payments USING(order_id)
+GROUP BY year_month
 ORDER BY year_month;
 
--- 3) Top 10 categories by revenue
-SELECT product_category_name, SUM(oi.price) AS revenue
+-- Monthly Orders
+SELECT
+    strftime('%Y-%m', order_purchase_timestamp) AS year_month,
+    COUNT(DISTINCT order_id) AS total_orders
+FROM orders
+GROUP BY year_month
+ORDER BY year_month;
+
+-- Monthly AOV
+SELECT
+    strftime('%Y-%m', order_purchase_timestamp) AS year_month,
+    SUM(payment_value) / COUNT(DISTINCT order_id) AS aov
+FROM orders
+JOIN payments USING(order_id)
+GROUP BY year_month
+ORDER BY year_month;
+
+-- Top 10 Categories by Revenue
+SELECT
+    c.product_category_name_english AS category_name,
+    SUM(p.payment_value) AS revenue
 FROM order_items oi
-LEFT JOIN products p ON oi.product_id = p.product_id
-LEFT JOIN payments pay ON oi.order_id = pay.order_id
-GROUP BY product_category_name
+JOIN products pr 
+        ON oi.product_id = pr.product_id
+JOIN payments p 
+        ON oi.order_id = p.order_id
+JOIN categories c 
+        ON pr.product_category_name = c.product_category_name
+GROUP BY c.product_category_name_english
 ORDER BY revenue DESC
 LIMIT 10;
 
--- 4) Top 10 sellers by revenue
-SELECT seller_id, SUM(price) AS revenue
+-- Top 10 Sellers by Revenue
+SELECT
+    seller_id,
+    SUM(payment_value) AS revenue,
+    COUNT(order_items.order_id) AS items_sold
 FROM order_items
+JOIN payments USING(order_id)
 GROUP BY seller_id
 ORDER BY revenue DESC
 LIMIT 10;
 
--- 5) On-time delivery rate
+-- Delivery Performance
 SELECT
-    SUM(CASE WHEN order_delivered_customer_date <= order_estimated_delivery_date THEN 1 ELSE 0 END) * 1.0
-    / COUNT(*) AS on_time_rate
+    strftime('%Y-%m', order_purchase_timestamp) AS year_month,
+    AVG(CASE WHEN order_delivered_customer_date <= order_estimated_delivery_date THEN 1 ELSE 0 END)
+        AS on_time_rate,
+    AVG(julianday(order_delivered_customer_date) - julianday(order_estimated_delivery_date))
+        AS avg_delay_days
 FROM orders
-WHERE order_delivered_customer_date IS NOT NULL
-AND order_estimated_delivery_date IS NOT NULL;
-
+GROUP BY year_month
+ORDER BY year_month;
