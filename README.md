@@ -1,32 +1,23 @@
-# Olist E-commerce Analytics — Portfolio Project
+# 📊 Olist E-Commerce Financial Analysis
 
-This repository contains an end-to-end data analytics portfolio project using the Brazilian Olist dataset.
-It includes data cleaning (Jupyter), ETL (Python + SQLite), SQL modeling, analytic marts and a Tableau executive dashboard.
+## 📌 Project Overview
+This project analyzes revenue, orders, and customer behaviour using Tableau dashboards.
 
-## Repo structure
+## 📊 Dashboards
+View interactive dashboards here:
+👉 [Tableau Public Link](PASTE_LINK_HERE)
 
-olist-portfolio/
-├─ data/
-│ ├─ raw/
-│ ├─ interim/
-│ └─ processed/
-├─ notebooks/
-│ ├─ 01_data_overview.ipynb
-│ ├─ 02_cleaning.ipynb
-│ ├─ 03_feature_engineering.ipynb
-│ ├─ 04_eda_financials.ipynb
-│ ├─ 05_sql_etl.ipynb
-│ └─ 06_tableau_prep.ipynb
-├─ src/
-│ ├─ etl/
-│ │ ├─ load_to_db.py
-│ │ └─ build_marts.py
-│ ├─ utils.py
-│ └─ config.py
-├─ sql/
-│ ├─ schema.sql
-│ ├─ etl.sql
-│ └─ analysis_queries.sql
-├─ dashboards/
-│ └─ tableau_design.md
-└─ README.md
+## 🔍 Key Insights
+- Revenue growth is driven by increasing order volume
+- Average Order Value remains stable
+- A small number of categories drive most revenue
+
+## 🛠 Tools Used
+- SQL
+- Tableau
+- Excel
+
+## 📁 Project Structure
+- data/
+- sql/
+- dashboards/
