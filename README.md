@@ -95,10 +95,10 @@ financial-analyst-portfolio-olist/
 └── README.md
 
 ## 🚀 Skills Demonstrated
-Financial KPI analysis
-SQL querying
-ETL workflows
-Exploratory Data Analysis
-Dashboard design
-Business insight communication
-Data storytelling
+- Financial KPI analysis
+- SQL querying
+- ETL workflows
+- Exploratory Data Analysis
+- Dashboard design
+- Business insight communication
+- Data storytelling
