@@ -88,3 +88,11 @@ financial-analyst-portfolio-olist/
 - Dashboard design
 - Business insight communication
 - Data storytelling
+- # 📌 Recommendations
+
+## Based on the analysis:
+
+- Increase focus on high-performing product categories
+- Prepare marketing campaigns before Q4 seasonal spikes
+- Monitor operational delays impacting customer satisfaction
+- Optimize pricing strategy to improve Average Order Value
