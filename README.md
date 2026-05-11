@@ -42,12 +42,12 @@ This analysis aims to answer:
 ## 🧹 Data Preparation
 The project includes:
 
-Missing value handling
-Data type corrections
-Feature engineering
-Date formatting
-Revenue calculations
-SQL ETL workflows
+- Missing value handling
+- Data type corrections
+- Feature engineering
+- Date formatting
+- Revenue calculations
+- SQL ETL workflows
 
 ## 📊 Dashboards
 
