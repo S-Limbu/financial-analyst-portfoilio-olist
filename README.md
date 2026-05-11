@@ -52,25 +52,13 @@ The project includes:
 ## 📊 Dashboards
 ## Executive Overview
 
-![Executive Overview](images/execytuve_overview.png)
+![Executive Overview](dashboards/images/executive_overview.png)
 
----
+![Orders Dashboard](dashboards/images/orders_aov.png)
 
-## Orders & Average Order Value
+![Category Dashboard](dashboards/images/category_performance.png)
 
-![Orders Dashboard](images/orders_aov.png)
-
----
-
-## Product Category Performance
-
-![Category Dashboard](images/category_performance.png)
-
----
-
-## Operational Performance Trends
-
-![Operations Dashboard](images/operational_trends.png)
+![Operations Dashboard](dashboards/images/operational_trends.png)
 ## 🔍 Key Insights
 - Revenue growth was primarily driven by increasing order volume rather than higher basket size.
 - Revenue peaked in November 2017, indicating strong seasonal demand.
