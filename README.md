@@ -33,11 +33,11 @@ This analysis aims to answer:
 
 
 ## 🛠 Tools Used
-Python (Pandas, NumPy)
-SQL (SQLite)
-Tableau Public
-Jupyter Notebook
-GitHub
+- Python (Pandas, NumPy)
+- SQL (SQLite)
+- Tableau Public
+- Jupyter Notebook
+- GitHub
 
 ## 🧹 Data Preparation
 The project includes:
