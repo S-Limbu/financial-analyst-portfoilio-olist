@@ -50,19 +50,6 @@ The project includes:
 - SQL ETL workflows
 
 ## 📊 Dashboards
-
-## 🔍 Key Insights
-- Revenue growth was primarily driven by increasing order volume rather than higher basket size.
-- Revenue peaked in November 2017, indicating strong seasonal demand.
-- Average Order Value remained relatively stable over time.
-- A small number of product categories contributed a disproportionate share of revenue.
-- Order growth accelerated significantly during late 2017 and early 2018.
-
-## 🌐 Tableau Public Dashboard
-View the interactive dashboards here:
-
-[Tableau Public Dashboard](https://public.tableau.com/app/profile/samuel.limbu/viz/olist_dashboard_17782743310030/ExecutiveOverview)
-
 ## Executive Overview
 
 ![Executive Overview](images/dashboard1.png)
@@ -84,6 +71,17 @@ View the interactive dashboards here:
 ## Operational Performance Trends
 
 ![Operations Dashboard](images/dashboard4.png)
+## 🔍 Key Insights
+- Revenue growth was primarily driven by increasing order volume rather than higher basket size.
+- Revenue peaked in November 2017, indicating strong seasonal demand.
+- Average Order Value remained relatively stable over time.
+- A small number of product categories contributed a disproportionate share of revenue.
+- Order growth accelerated significantly during late 2017 and early 2018.
+
+## 🌐 Tableau Public Dashboard
+View the interactive dashboards here:
+
+[Tableau Public Dashboard](https://public.tableau.com/app/profile/samuel.limbu/viz/olist_dashboard_17782743310030/ExecutiveOverview)
 ## 📂 Repository Structure
 financial-analyst-portfolio-olist/
 │
