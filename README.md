@@ -15,12 +15,12 @@ The project combines SQL, Python, and Tableau to build an end-to-end financial a
 ## 🎯 Business Questions
 This analysis aims to answer:
 
-How has monthly revenue changed over time?
-What drives revenue growth: order volume or basket size?
-Which product categories generate the highest revenue?
-Are there seasonal trends in customer purchasing?
-How stable is Average Order Value (AOV)?
-Which operational trends may affect future growth?
+- How has monthly revenue changed over time?
+- What drives revenue growth: order volume or basket size?
+- Which product categories generate the highest revenue?
+- Are there seasonal trends in customer purchasing?
+- How stable is Average Order Value (AOV)?
+- Which operational trends may affect future growth?
 
 ## 📈 Key KPIs
 | KPI                       | Description                                   |
