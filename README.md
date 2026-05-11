@@ -5,12 +5,12 @@ This project analyzes transactional e-commerce data from Olist, a Brazilian onli
 
 The project combines SQL, Python, and Tableau to build an end-to-end financial analytics workflow including:
 
-' - Data cleaning
-Exploratory data analysis
-KPI calculation
-Revenue trend analysis
-Dashboard development
-Business insight generation
+- Data cleaning
+- Exploratory data analysis
+- KPI calculation
+- Revenue trend analysis
+- Dashboard development
+- Business insight generation
 
 ## 🎯 Business Questions
 This analysis aims to answer:
