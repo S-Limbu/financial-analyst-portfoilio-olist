@@ -61,7 +61,7 @@ The project includes:
 ## 🌐 Tableau Public Dashboard
 View the interactive dashboards here:
 
-Tableau Public Dashboard
+[Tableau Public Dashboard](https://public.tableau.com/app/profile/samuel.limbu/viz/olist_dashboard_17782743310030/ExecutiveOverview)
 
 ## Executive Overview
 
